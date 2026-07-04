@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我們就是沒有用的年輕人 — 專輯企劃官網</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: #b3b3b3;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif { 
+            font-family: 'Noto Serif TC', serif; 
+        }
+        
+        /* 頹廢膠片顆粒感 Film Grain Effect */
+        .grain {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* 日式直排文字 Vertical Text */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        /* 滾動顯現動畫 Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 橫線漸變 */
+        .line-accent {
+            height: 1px;
+            background: linear-gradient(to right, #333333, transparent);
+            width: 100%;
+            margin: 2.5rem 0;
+        }
+        
+        /* 縱線漸變 */
+        .vertical-line {
+            width: 1px;
+            background: linear-gradient(to bottom, #444444, transparent);
+            height: 180px;
+            margin: 2.5rem auto;
+        }
+
+        /* 自定義滾動條 Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0b0b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3a3a3a;
+        }
+    </style>
+</head>
+<body class="selection:bg-neutral-800 selection:text-white">
+    <!-- 顆粒感疊加層 -->
+    <div class="grain"></div>
+
+    <!-- SECTION 1: HERO (無效防禦與倒數 / THE VOID) -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
+        <!-- 專輯主視覺海報作為大背景 (相對路徑) -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="images/poster.png" 
+                 class="w-full h-full object-cover opacity-25 grayscale contrast-125 transition-all duration-1000 hover:opacity-40 hover:grayscale-0" 
+                 alt="我們就是沒有用的年輕人 主視覺">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-black opacity-90"></div>
+        </div>
+        
+        <div class="relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16 px-6 max-w-6xl w-full justify-between">
+            <!-- 左側/中上：主標題 (手寫字圖整合) -->
+            <div class="flex items-center gap-6 max-w-sm md:max-w-md lg:max-w-lg">
+                <!-- 透過 CSS 濾鏡將白底黑字反轉為白字並融於暗色背景 -->
+                <div class="relative flex justify-center">
+                    <img src="images/title_handwritten.png" 
+                         class="w-64 md:w-80 lg:w-96 h-auto object-contain opacity-95 transition-all duration-1000 hover:opacity-100 hover:scale-[1.03]" 
+                         style="filter: invert(1) contrast(1.4) brightness(1.2); mix-blend-mode: screen;" 
+                         alt="我們就是沒有用的年輕人 手寫標題">
+                </div>
+                <div class="vertical-text serif text-base text-neutral-500 tracking-[0.3em] pt-6 whitespace-nowrap">
+                    WE ARE JUST USELESS YOUTH.
+                </div>
+            </div>
+            
+            <!-- 右側/中下：核心文案與引導 -->
+            <div class="max-w-lg text-left md:text-right flex flex-col items-start md:items-end">
+                <div class="serif text-sm tracking-[0.3em] text-neutral-500 uppercase mb-4">Album Concept Proposal</div>
+                <p class="serif text-2xl md:text-3xl text-neutral-200 leading-relaxed tracking-wide">
+                    工作、生活、心理平衡
+                </p>
+                <div class="line-accent md:rotate-180"></div>
+                <p class="text-sm md:text-base text-neutral-400 leading-loose max-w-sm">
+                    如何長大又沒變壞
+                </p>
+            </div>
+        </div>
+
+        <!-- 向下滾動指引 -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-40">
+            <span class="text-[10px] tracking-[0.4em] uppercase mb-2">SCROLL DOWN</span>
+            <div class="w-[1px] h-12 bg-neutral-700 animate-pulse"></div>
+        </div>
+    </section>
+
+    <!-- INTRO DUOLOGY / 獨白前言 -->
+    <section class="py-32 bg-[#0b0b0b] px-6">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <span class="serif text-sm tracking-[0.4em] text-neutral-600 block mb-8">PROLOGUE</span>
+            <p class="serif text-2xl md:text-3xl text-neutral-200 leading-loose tracking-wider">
+                「不要讓生存，成為你存在於這個世界的唯一理由。」
+            </p>
+            <div class="vertical-line"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CHAPTER 1 (成長的代價) -->
+    <section class="py-32 px-6 md:px-24 max-w-6xl mx-auto border-t border-neutral-900">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <!-- 階段側欄 -->
+            <div class="lg:col-span-4 sticky top-24 space-y-6">
+                <span class="serif text-sm tracking-[0.5em] text-neutral-600 block">Chapter 1</span>
+                <h2 class="serif text-4xl md:text-5xl text-neutral-200 font-bold tracking-wider">成長的代價</h2>
+                <div class="h-[1px] w-16 bg-neutral-800 my-6"></div>
+                <p class="text-base md:text-lg leading-loose text-neutral-500">
+                    為了在社會中存活是有代價的，這僅僅是為了換取一刻喘息的空間
+                </p>
+            </div>
+
+            <!-- 曲目列表 -->
+            <div class="lg:col-span-8 space-y-36">
+                <!-- Track 01 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">01</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">倒數</h3>
+                        <span class="text-xs text-neutral-600 ml-auto tracking-widest uppercase">Intro</span>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        站在房間靠近門的地方，背對著門外，以被迫的姿態迎接未知。破碎的鏡子映射著滄桑的面容，彷彿曾經勇敢地掙扎過一樣。在決定要踏出門外的一刻，伴隨著遺憾與徒勞無功的感傷，啟動了倒數的時鐘。
+                    </p>
+                    <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
+                        <img src="images/Pocketwatch.jpg" 
+                             class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
+                             alt="倒數">
+                    </div>
+                </div>
+
+                <!-- Track 02 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">02</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">2973 公里</h3>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        這首歌主要講述自己跟家人離別，去遙遠的地方求學。當中帶有十分不捨和難過的心情。每個人在成長的階段，總會有一些時候要跟自己的家庭告別一陣的時光。身為父母身處在遠方，總會思念著自己的孩子，祈求孩子的安好和保佑他們。作為持續成長的大人，即使已經孤身一人獨自前進，也不要忘記曾經身為孩子的自己也幸福快樂過。
+                    </p>
+                    <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
+                        <img src="images/city_background.jpeg" 
+                             class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
+                             alt="2973公里">
+                    </div>
+                </div>
+
+                <!-- Track 03 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">03</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">捨棄</h3>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        成長總伴隨著代價。曾幾何時，身邊只剩下同事。曾幾何時，飯桌上只剩下認識的人。曾經何時，在路上只剩下自己的影子。捨棄的到底是什麼？
+                    </p>
+                    <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
+                        <img src="images/Crossroad.png" 
+                             class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
+                             alt="捨棄">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CHAPTER 2 (雙面人) -->
+    <section class="py-32 bg-[#0e0e0e] border-y border-neutral-900 px-6 md:px-24">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col items-center text-center mb-24 reveal">
+                <span class="serif text-sm tracking-[0.5em] text-neutral-600 block mb-4">Chapter 2</span>
+                <h2 class="serif text-4xl md:text-5xl text-neutral-200 font-bold tracking-wider">雙面人</h2>
+                <div class="vertical-line !h-16 !my-6"></div>
+                <p class="text-base md:text-lg text-neutral-500 max-w-3xl leading-loose">
+                    要好好珍惜所有能喘息的瞬間
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Track 04 -->
+                <div class="reveal bg-[#090909] p-10 border border-neutral-900 hover:border-neutral-800 transition-all duration-500 group flex flex-col justify-between min-h-[350px]">
+                    <div>
+                        <div class="flex items-baseline justify-between mb-8">
+                            <span class="serif text-3xl text-neutral-700">04</span>
+                            <span class="text-[10px] tracking-widest text-neutral-600 uppercase">Track 04</span>
+                        </div>
+                        <h3 class="serif text-2xl text-neutral-200 font-bold mb-4 group-hover:text-neutral-100 transition-colors">笨拙的記憶</h3>
+                        <p class="text-sm md:text-base text-neutral-500 leading-loose">
+                            受到現實的打擊下體無完膚，這首歌描述了一種暫時性的逃避——那些不想面對現實的人們，正試圖在記憶中尋找片刻的安寧。
+                        </p>
+                    </div>
+                    <div class="mt-8 text-xs tracking-widest text-neutral-600 group-hover:text-neutral-400 transition-colors">TEMPORARY ESCAPE →</div>
+                </div>
+
+                <!-- Track 05 -->
+                <div class="reveal bg-[#0b0b0b] p-10 border border-neutral-800 shadow-2xl relative z-10 hover:border-neutral-700 transition-all duration-500 group flex flex-col justify-between min-h-[350px] md:-translate-y-4">
+                    <div>
+                        <div class="flex items-baseline justify-between mb-8">
+                            <span class="serif text-3xl text-neutral-500">05</span>
+                            <span class="text-[10px] tracking-widest text-neutral-500 uppercase">Track 05</span>
+                        </div>
+                        <h3 class="serif text-2xl text-neutral-100 font-bold mb-4 group-hover:text-white transition-colors">面具人</h3>
+                        <p class="text-sm md:text-base text-neutral-400 leading-loose">
+                            白天的妥協與夜晚的放肆。白天的妥協，是戴上社會化面具、精準執行體制生存法則的客觀展現；而當夜幕降臨，被壓抑的真實自我則以「放肆」的形式全面爆發。成為雙面人並非出於道德上的虛偽，而是為了在殘酷的現實巨浪中維持心理平衡。
+                        </p>
+                    </div>
+                    <div class="mt-8 text-xs tracking-widest text-neutral-400">THE DUAL-TRACK MECHANISM</div>
+                </div>
+
+                <!-- Track 06 -->
+                <div class="reveal bg-[#090909] p-10 border border-neutral-900 hover:border-neutral-800 transition-all duration-500 group flex flex-col justify-between min-h-[350px]">
+                    <div>
+                        <div class="flex items-baseline justify-between mb-8">
+                            <span class="serif text-3xl text-neutral-700">06</span>
+                            <span class="text-[10px] tracking-widest text-neutral-600 uppercase">Track 06</span>
+                        </div>
+                        <h3 class="serif text-2xl text-neutral-200 font-bold mb-4 group-hover:text-neutral-100 transition-colors">會有所不同嗎</h3>
+                        <p class="text-sm md:text-base text-neutral-500 leading-loose">
+                            躺在床上無所事事，感受理想喪失後的空虛。這首歌探討了在身份認同、經濟壓力與理想變現之間的掙扎，求問著在這個充斥著分歧的世界裡，是否真的能有所不同。
+                        </p>
+                    </div>
+                    <div class="mt-8 text-xs tracking-widest text-neutral-600 group-hover:text-neutral-400 transition-colors">THE EXISTENTIAL QUESTION →</div>
+                </div>
+            </div>
+
+            <!-- 中段概念大圖 -->
+            <div class="mt-24 flex justify-center reveal">
+                <div class="w-full max-w-4xl overflow-hidden bg-neutral-950 aspect-[21/9] relative group border border-neutral-900">
+                    <img src="images/Gemini_Generated_Image_nn0ewtnn0ewtnn0e.png" 
+                         class="w-full h-full object-cover opacity-20 grayscale transition-all duration-1000 group-hover:opacity-40 group-hover:scale-105" 
+                         alt="白天的妥協與夜晚的自我修復">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="serif text-sm md:text-base tracking-[0.6em] text-neutral-300 border border-neutral-800 px-8 py-4 bg-black/60 backdrop-blur-sm">
+                            「白天的妥協，與夜晚的放肆。」
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CHAPTER 3 (對自己的溫柔) -->
+    <section class="py-32 px-6 md:px-24 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <!-- 階段側欄 (右置，形成交錯排版) -->
+            <div class="lg:col-span-4 lg:order-last sticky top-24 space-y-6 lg:text-right">
+                <span class="serif text-sm tracking-[0.5em] text-neutral-600 block">Chapter 3</span>
+                <h2 class="serif text-4xl md:text-5xl text-neutral-200 font-bold tracking-wider">對自己的溫柔</h2>
+                <div class="h-[1px] w-16 bg-neutral-800 lg:ml-auto my-6"></div>
+                <p class="text-base md:text-lg leading-loose text-neutral-500">
+                    即便外在世界再糟糕、道路再多棘手，只要能找到屬於自己的避風港，一切都是值得的。
+                </p>
+            </div>
+
+            <!-- 曲目列表 -->
+            <div class="lg:col-span-8 space-y-36">
+                <!-- Track 07 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">07</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">渺小</h3>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        認知到自己的渺小並非錯誤，而是一種覺醒。當我們懂得認清自我並開始為真正渴求的事物爭取時，那份渺小將轉化為正確前行的動力。
+                    </p>
+                    <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
+                        <img src="images/notebook.jpg" 
+                             class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
+                             alt="渺小">
+                    </div>
+                </div>
+
+                <!-- Track 08 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">08</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">就在我們相遇的一刻</h3>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        即便未來的道路佈滿荊棘，甚至被迫在震動的地面上繼續往前，我們仍相信相遇的瞬間。雖然曾經的願望被埋葬，但這份連結將成為彼此在黑暗街道上的避風塘。
+                    </p>
+                    <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
+                        <img src="images/pexels-strannik-sk-35368202.jpg" 
+                             class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
+                             alt="就在我們相遇的一刻">
+                    </div>
+                </div>
+
+                <!-- Track 09 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-900 pb-4">
+                        <span class="serif text-4xl text-neutral-600">09</span>
+                        <h3 class="serif text-3xl text-neutral-200 font-bold">直至我們逝去的一刻 <span class="text-sm font-normal text-neutral-500">Reprise</span></h3>
+                    </div>
+                    <p class="leading-loose text-neutral-400 text-base md:text-lg">
+                        即使世界很糟糕，還是會有一些值得被珍惜的事物。儘管世界糟糕如荒漠，我們仍要緊握命運，不再沈默。即使在生命走到盡頭、眼淚掉落的時刻，也要帶著執著與溫柔與珍惜的事物一同走下去，直到最後一分鐘。
+                    </p>
+                </div>
+
+                <!-- Track 10 -->
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-baseline gap-4 border-b border-neutral-800 pb-4">
+                        <span class="serif text-4xl text-neutral-400">10</span>
+                        <h3 class="serif text-3xl text-white font-bold">Outro</h3>
+                        <span class="text-xs text-neutral-500 ml-auto tracking-widest uppercase">Epilogue</span>
+                    </div>
+                    <p class="leading-loose text-neutral-100 text-lg md:text-xl font-bold italic py-6 border-l-2 border-neutral-400 pl-6 my-4 bg-neutral-950/70 shadow-inner">
+                        「不要讓生存，成為你存在於這個世界的唯一理由。世上還有值得珍惜的事物，好好把握、好好珍惜、好好活著。」
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (最終歸宿與餘韻) -->
+    <footer class="py-32 bg-black text-center border-t border-neutral-900 relative">
+        <div class="reveal px-6 max-w-2xl mx-auto flex flex-col items-center">
+            <span class="serif text-xs tracking-[0.5em] text-neutral-600 mb-6">WE ARE JUST USELESS YOUTH</span>
+            <p class="serif text-xl md:text-2xl text-neutral-300 leading-loose italic mb-8">
+                <我們就是沒有用的年輕人> 倒數
+            </p>
+            <div class="line-accent opacity-20"></div>
+            <p class="text-[10px] tracking-[0.3em] opacity-30 uppercase mt-4">
+                &copy; 2026 我們就是沒有用的年輕人 專輯企劃. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript 捲動互動效果 -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
