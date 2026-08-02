@@ -71,14 +71,14 @@
 | `poster.webp` | 專輯主視覺海報 (Hero 背景) | WebP |
 | `title_handwritten.webp` | 手寫字標題 | WebP |
 | `Pocketwatch.webp` | Track 01 (倒數) 配圖 | WebP |
-| `city_background.webp` | Track 02 (2973 公里) 配圖 | WebP |
-| `Crossroad.webp` | Track 03 (捨棄) 配圖 | WebP |
+| `city_background.webp` | Track 02 (2973 公里) 配圖 (Magnific MCP 重設) | WebP |
+| `Crossroad.webp` | Track 03 (捨棄) 配圖 (Magnific MCP 重設) | WebP |
 | `track04_memory.webp` | Track 04 (笨拙的記憶) 配圖 (Magnific MCP 生成) | WebP |
 | `track05_mask.webp` | Track 05 (面具人) 配圖 (Magnific MCP 生成) | WebP |
 | `track06_void.webp` | Track 06 (會有所不同嗎) 配圖 (Magnific MCP 生成) | WebP |
 | `Gemini_Generated_Image_nn0ewtnn0ewtnn0e.webp` | Chapter 2 概念大圖 | WebP |
 | `notebook.webp` | Track 07 (渺小) 配圖 | WebP |
-| `pexels-strannik-sk-35368202.webp` | Track 08 (就在我們相遇的一刻) 配圖 | WebP |
+| `pexels-strannik-sk-35368202.webp` | Track 08 (就在我們相遇的一刻) 配圖 (Magnific MCP 重設) | WebP |
 | `track09_reprise.webp` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 (Magnific MCP 生成) | WebP |
 | `track10_outro.webp` | Track 10 (Outro) 配圖 (Magnific MCP 生成) | WebP |
 
@@ -129,6 +129,7 @@
 
 ## 📋 待辦事項 (TODO)
 - [x] 新增所有 10 首曲目的視覺概念插圖
+- [x] 重設 Track 02、03、08 封面圖片 (Magnific MCP)
 - [x] 修復手機版 Chapter 文字重疊問題
 - [x] 全站圖片轉換為 WebP 並加入 lazy loading
 - [ ] 確認所有圖片在不同裝置上的顯示效果
@@ -138,5 +139,5 @@
 ---
 
 ## 📅 最後更新
-- **日期**：2026-08-02
-- **版本**：v1.2 手機版修復 + 效能優化版
+- **日期**：2026-08-03
+- **版本**：v1.3 Track 2, 3, 8 視覺封面重設版
