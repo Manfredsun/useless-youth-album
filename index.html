@@ -83,7 +83,7 @@
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
         <!-- 專輯主視覺海報作為大背景 (相對路徑) -->
         <div class="absolute inset-0 w-full h-full">
-            <img src="images/poster.png" 
+            <img src="images/poster.webp" 
                  class="w-full h-full object-cover opacity-25 grayscale contrast-125 transition-all duration-1000 hover:opacity-40 hover:grayscale-0" 
                  alt="我們就是沒有用的年輕人 主視覺">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-black opacity-90"></div>
@@ -94,7 +94,7 @@
             <div class="flex items-center gap-6 max-w-sm md:max-w-md lg:max-w-lg">
                 <!-- 透過 CSS 濾鏡將白底黑字反轉為白字並融於暗色背景 -->
                 <div class="relative flex justify-center">
-                    <img src="images/title_handwritten.png" 
+                    <img src="images/title_handwritten.webp" 
                          class="w-64 md:w-80 lg:w-96 h-auto object-contain opacity-95 transition-all duration-1000 hover:opacity-100 hover:scale-[1.03]" 
                          style="filter: invert(1) contrast(1.4) brightness(1.2); mix-blend-mode: screen;" 
                          alt="我們就是沒有用的年輕人 手寫標題">
@@ -135,7 +135,7 @@
     <section class="py-32 px-6 md:px-24 max-w-6xl mx-auto border-t border-neutral-900">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <!-- 階段側欄 -->
-            <div class="lg:col-span-4 sticky top-24 space-y-6">
+            <div class="lg:col-span-4 lg:sticky lg:top-24 space-y-6 pb-8 lg:pb-0 border-b border-neutral-900 lg:border-b-0">
                 <span class="serif text-sm tracking-[0.5em] text-neutral-600 block">Chapter 1</span>
                 <h2 class="serif text-4xl md:text-5xl text-neutral-200 font-bold tracking-wider">成長的代價</h2>
                 <div class="h-[1px] w-16 bg-neutral-800 my-6"></div>
@@ -157,9 +157,9 @@
                         站在房間靠近門的地方，背對著門外，以被迫的姿態迎接未知。破碎的鏡子映射著滄桑的面容，彷彿曾經勇敢地掙扎過一樣。在決定要踏出門外的一刻，伴隨著遺憾與徒勞無功的感傷，啟動了倒數的時鐘。
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/Pocketwatch.jpg" 
+                        <img src="images/Pocketwatch.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="倒數">
+                             alt="倒數" loading="lazy">
                     </div>
                 </div>
 
@@ -173,9 +173,9 @@
                         這首歌主要講述自己跟家人離別，去遙遠的地方求學。當中帶有十分不捨和難過的心情。每個人在成長的階段，總會有一些時候要跟自己的家庭告別一陣的時光。身為父母身處在遠方，總會思念著自己的孩子，祈求孩子的安好和保佑他們。作為持續成長的大人，即使已經孤身一人獨自前進，也不要忘記曾經身為孩子的自己也幸福快樂過。
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/city_background.jpeg" 
+                        <img src="images/city_background.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="2973公里">
+                             alt="2973公里" loading="lazy">
                     </div>
                 </div>
 
@@ -189,9 +189,9 @@
                         成長總伴隨著代價。曾幾何時，身邊只剩下同事。曾幾何時，飯桌上只剩下認識的人。曾經何時，在路上只剩下自己的影子。捨棄的到底是什麼？
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/Crossroad.png" 
+                        <img src="images/Crossroad.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="捨棄">
+                             alt="捨棄" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -223,9 +223,9 @@
                             受到現實的打擊下體無完膚，這首歌描述了一種暫時性的逃避——那些不想面對現實的人們，正試圖在記憶中尋找片刻的安寧。
                         </p>
                         <div class="overflow-hidden bg-neutral-950 aspect-[16/9] mb-6 rounded border border-neutral-900">
-                            <img src="images/track04_memory.jpg" 
+                            <img src="images/track04_memory.webp" 
                                  class="w-full h-full object-cover opacity-40 grayscale group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                 alt="笨拙的記憶">
+                                 alt="笨拙的記憶" loading="lazy">
                         </div>
                     </div>
                     <div class="mt-4 text-xs tracking-widest text-neutral-600 group-hover:text-neutral-400 transition-colors">TEMPORARY ESCAPE →</div>
@@ -243,9 +243,9 @@
                             白天的妥協與夜晚的放肆。白天的妥協，是戴上社會化面具、精準執行體制生存法則的客觀展現；而當夜幕降臨，被壓抑的真實自我則以「放肆」的形式全面爆發。成為雙面人並非出於道德上的虛偽，而是為了在殘酷的現實巨浪中維持心理平衡。
                         </p>
                         <div class="overflow-hidden bg-neutral-950 aspect-[16/9] mb-6 rounded border border-neutral-800">
-                            <img src="images/track05_mask.jpg" 
+                            <img src="images/track05_mask.webp" 
                                  class="w-full h-full object-cover opacity-50 grayscale group-hover:opacity-90 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                 alt="面具人">
+                                 alt="面具人" loading="lazy">
                         </div>
                     </div>
                     <div class="mt-4 text-xs tracking-widest text-neutral-400">THE DUAL-TRACK MECHANISM</div>
@@ -263,9 +263,9 @@
                             躺在床上無所事事，感受理想喪失後的空虛。這首歌探討了在身份認同、經濟壓力與理想變現之間的掙扎，求問著在這個充斥著分歧的世界裡，是否真的能有所不同。
                         </p>
                         <div class="overflow-hidden bg-neutral-950 aspect-[16/9] mb-6 rounded border border-neutral-900">
-                            <img src="images/track06_void.jpg" 
+                            <img src="images/track06_void.webp" 
                                  class="w-full h-full object-cover opacity-40 grayscale group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                 alt="會有所不同嗎">
+                                 alt="會有所不同嗎" loading="lazy">
                         </div>
                     </div>
                     <div class="mt-4 text-xs tracking-widest text-neutral-600 group-hover:text-neutral-400 transition-colors">THE EXISTENTIAL QUESTION →</div>
@@ -275,9 +275,9 @@
             <!-- 中段概念大圖 -->
             <div class="mt-24 flex justify-center reveal">
                 <div class="w-full max-w-4xl overflow-hidden bg-neutral-950 aspect-[21/9] relative group border border-neutral-900">
-                    <img src="images/Gemini_Generated_Image_nn0ewtnn0ewtnn0e.png" 
+                    <img src="images/Gemini_Generated_Image_nn0ewtnn0ewtnn0e.webp" 
                          class="w-full h-full object-cover opacity-20 grayscale transition-all duration-1000 group-hover:opacity-40 group-hover:scale-105" 
-                         alt="白天的妥協與夜晚的自我修復">
+                         alt="白天的妥協與夜晚的自我修復" loading="lazy">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="serif text-sm md:text-base tracking-[0.6em] text-neutral-300 border border-neutral-800 px-8 py-4 bg-black/60 backdrop-blur-sm">
                             「白天的妥協，與夜晚的放肆。」
@@ -292,7 +292,7 @@
     <section class="py-32 px-6 md:px-24 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <!-- 階段側欄 (右置，形成交錯排版) -->
-            <div class="lg:col-span-4 lg:order-last sticky top-24 space-y-6 lg:text-right">
+            <div class="lg:col-span-4 lg:order-last lg:sticky lg:top-24 space-y-6 lg:text-right pb-8 lg:pb-0 border-b border-neutral-900 lg:border-b-0">
                 <span class="serif text-sm tracking-[0.5em] text-neutral-600 block">Chapter 3</span>
                 <h2 class="serif text-4xl md:text-5xl text-neutral-200 font-bold tracking-wider">對自己的溫柔</h2>
                 <div class="h-[1px] w-16 bg-neutral-800 lg:ml-auto my-6"></div>
@@ -313,9 +313,9 @@
                         認知到自己的渺小並非錯誤，而是一種覺醒。當我們懂得認清自我並開始為真正渴求的事物爭取時，那份渺小將轉化為正確前行的動力。
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/notebook.jpg" 
+                        <img src="images/notebook.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="渺小">
+                             alt="渺小" loading="lazy">
                     </div>
                 </div>
 
@@ -329,9 +329,9 @@
                         即便未來的道路佈滿荊棘，甚至被迫在震動的地面上繼續往前，我們仍相信相遇的瞬間。雖然曾經的願望被埋葬，但這份連結將成為彼此在黑暗街道上的避風塘。
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/pexels-strannik-sk-35368202.jpg" 
+                        <img src="images/pexels-strannik-sk-35368202.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="就在我們相遇的一刻">
+                             alt="就在我們相遇的一刻" loading="lazy">
                     </div>
                 </div>
 
@@ -345,9 +345,9 @@
                         即使世界很糟糕，還是會有一些值得被珍惜的事物。儘管世界糟糕如荒漠，我們仍要緊握命運，不再沈默。即使在生命走到盡頭、眼淚掉落的時刻，也要帶著執著與溫柔與珍惜的事物一同走下去，直到最後一分鐘。
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/track09_reprise.jpg" 
+                        <img src="images/track09_reprise.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="直至我們逝去的一刻 Reprise">
+                             alt="直至我們逝去的一刻 Reprise" loading="lazy">
                     </div>
                 </div>
 
@@ -362,9 +362,9 @@
                         「不要讓生存，成為你存在於這個世界的唯一理由。世上還有值得珍惜的事物，好好把握、好好珍惜、好好活著。」
                     </p>
                     <div class="overflow-hidden bg-neutral-950 aspect-[21/9]">
-                        <img src="images/track10_outro.jpg" 
+                        <img src="images/track10_outro.webp" 
                              class="w-full h-full object-cover opacity-30 grayscale hover:opacity-60 transition-all duration-700 hover:scale-105" 
-                             alt="Outro">
+                             alt="Outro" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -387,9 +387,9 @@
             <div class="reveal group cursor-pointer">
                 <div class="bg-[#090909] border border-neutral-900 hover:border-neutral-700 transition-all duration-500 p-6 rounded-lg overflow-hidden">
                     <div class="aspect-square overflow-hidden mb-6 bg-neutral-950 rounded">
-                        <img src="images/十字路口 歌詞壓克力.png" 
+                        <img src="images/十字路口 歌詞壓克力.webp" 
                              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
-                             alt="壓克力歌詞板">
+                             alt="壓克力歌詞板" loading="lazy">
                     </div>
                     <div class="space-y-2">
                         <h3 class="serif text-xl text-neutral-200 font-bold group-hover:text-white transition-colors">歌詞壓克力板</h3>
@@ -404,9 +404,9 @@
             <div class="reveal group cursor-pointer">
                 <div class="bg-[#090909] border border-neutral-900 hover:border-neutral-700 transition-all duration-500 p-6 rounded-lg overflow-hidden">
                     <div class="aspect-square overflow-hidden mb-6 bg-neutral-950 rounded">
-                        <img src="images/壓克力設計.png" 
+                        <img src="images/壓克力設計.webp" 
                              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
-                             alt="壓克力鑰匙圈">
+                             alt="壓克力鑰匙圈" loading="lazy">
                     </div>
                     <div class="space-y-2">
                         <h3 class="serif text-xl text-neutral-200 font-bold group-hover:text-white transition-colors">壓克力鑰匙圈</h3>
@@ -421,9 +421,9 @@
             <div class="reveal group cursor-pointer">
                 <div class="bg-[#090909] border border-neutral-900 hover:border-neutral-700 transition-all duration-500 p-6 rounded-lg overflow-hidden">
                     <div class="aspect-square overflow-hidden mb-6 bg-neutral-950 rounded">
-                        <img src="images/布條.png" 
+                        <img src="images/布條.webp" 
                              class="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-all duration-700" 
-                             alt="布條鑰匙圈">
+                             alt="布條鑰匙圈" loading="lazy">
                     </div>
                     <div class="space-y-2">
                         <h3 class="serif text-xl text-neutral-200 font-bold group-hover:text-white transition-colors">刺繡布條鑰匙圈</h3>
