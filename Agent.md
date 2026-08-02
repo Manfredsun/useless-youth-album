@@ -30,6 +30,10 @@ git push
 ---
 
 ## 🕒 最近更新紀錄 (Update Log)
+- **2026-08-03 (v1.4)**：宣傳周邊新增 2 款概念 T-Shirt
+  - 新增「起來復健 概念 T-Shirt」(水洗古著質感 + SLEEPLESS-NIGHTS 音響麥克風印花)
+  - 新增「醉生夢死 概念 T-Shirt」(水洗古著質感 + 無所事事 骨骼碰杯印花)
+  - 新增 `tshirt_sleepless_nights.webp` 與 `tshirt_zuishengmengsi.webp` 至周邊展示區塊
 - **2026-08-03 (v1.3)**：重設 Track 02、03、08 封面圖片
   - 使用 Magnific MCP 重新生成 Track 02 (2973 公里 - 月台告別主題)、Track 03 (捨棄 - 雨夜孤影主題)、Track 08 (就在我們相遇的一刻 - 暗巷街燈雙人主題) 概念圖片
   - 轉換為超高效能 WebP 格式 (單圖僅 ~30-58 KB)
