@@ -49,6 +49,8 @@
 - **主色調**：深黑 `#0b0b0b` + 灰階中性色
 - **特效**：膠片顆粒感 (Film Grain)、滾動漸顯 (Scroll Reveal)
 - **手寫標題**：使用 CSS `filter: invert(1) contrast(1.4)` + `mix-blend-mode: screen` 將白底黑字轉為透明背景白字
+- **圖片格式**：全站統一使用 WebP (原始 PNG/JPG 備份保留，網站僅引用 `.webp`)
+- **圖片載入**：Hero 圖片 eager load；其餘所有圖片 `loading="lazy"`
 
 ### 頁面區塊 (Section)
 1. **Hero** - 主視覺 + 手寫標題 + 核心文案
@@ -64,28 +66,28 @@
 ## 🎨 視覺素材清單
 
 ### 主要圖片 (`images/` 資料夾)
-| 檔名 | 用途 |
-|------|------|
-| `poster.png` | 專輯主視覺海報 (Hero 背景) |
-| `title_handwritten.png` | 手寫字標題 |
-| `Pocketwatch.jpg` | Track 01 (倒數) 配圖 |
-| `city_background.jpeg` | Track 02 (2973 公里) 配圖 |
-| `Crossroad.png` | Track 03 (捨棄) 配圖 |
-| `track04_memory.jpg` | Track 04 (笨拙的記憶) 配圖 (Magnific MCP 生成) |
-| `track05_mask.jpg` | Track 05 (面具人) 配圖 (Magnific MCP 生成) |
-| `track06_void.jpg` | Track 06 (會有所不同嗎) 配圖 (Magnific MCP 生成) |
-| `Gemini_Generated_Image_nn0ewtnn0ewtnn0e.png` | Chapter 2 概念大圖 |
-| `notebook.jpg` | Track 07 (渺小) 配圖 |
-| `pexels-strannik-sk-35368202.jpg` | Track 08 (就在我們相遇的一刻) 配圖 |
-| `track09_reprise.jpg` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 (Magnific MCP 生成) |
-| `track10_outro.jpg` | Track 10 (Outro) 配圖 (Magnific MCP 生成) |
+| 檔名 | 用途 | 格式 |
+|------|------|------|
+| `poster.webp` | 專輯主視覺海報 (Hero 背景) | WebP |
+| `title_handwritten.webp` | 手寫字標題 | WebP |
+| `Pocketwatch.webp` | Track 01 (倒數) 配圖 | WebP |
+| `city_background.webp` | Track 02 (2973 公里) 配圖 | WebP |
+| `Crossroad.webp` | Track 03 (捨棄) 配圖 | WebP |
+| `track04_memory.webp` | Track 04 (笨拙的記憶) 配圖 (Magnific MCP 生成) | WebP |
+| `track05_mask.webp` | Track 05 (面具人) 配圖 (Magnific MCP 生成) | WebP |
+| `track06_void.webp` | Track 06 (會有所不同嗎) 配圖 (Magnific MCP 生成) | WebP |
+| `Gemini_Generated_Image_nn0ewtnn0ewtnn0e.webp` | Chapter 2 概念大圖 | WebP |
+| `notebook.webp` | Track 07 (渺小) 配圖 | WebP |
+| `pexels-strannik-sk-35368202.webp` | Track 08 (就在我們相遇的一刻) 配圖 | WebP |
+| `track09_reprise.webp` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 (Magnific MCP 生成) | WebP |
+| `track10_outro.webp` | Track 10 (Outro) 配圖 (Magnific MCP 生成) | WebP |
 
 ### 周邊商品圖片
-| 檔名 | 商品 |
-|------|------|
-| `十字路口 歌詞壓克力.png` | 歌詞壓克力板 |
-| `壓克力設計.png` | 壓克力鑰匙圈 |
-| `布條.png` | 刺繡布條鑰匙圈 |
+| 檔名 | 商品 | 格式 |
+|------|------|------|
+| `十字路口 歌詞壓克力.webp` | 歌詞壓克力板 | WebP |
+| `壓克力設計.webp` | 壓克力鑰匙圈 | WebP |
+| `布條.webp` | 刺繡布條鑰匙圈 | WebP |
 
 ---
 
@@ -116,20 +118,25 @@
 - **若不幸發生**：刪除 `.rtfd` 資料夾後重新導出 `index.html`
 
 ### 圖片路徑
-- 所有圖片使用**相對路徑** (如 `images/poster.png`)
+- 所有圖片使用**相對路徑** (如 `images/poster.webp`)
 - 絕對不可使用本地絕對路徑 (如 `file:///Users/...`)，否則瀏覽器會因安全機制而拒絕加載
+- 原始 PNG/JPG 備份保留在 `images/` 資料夾中，未來替換圖片時只需重新轉換為 WebP
+
+### 手機版注意
+- Chapter 側欄必須使用 `lg:sticky lg:top-24`，**禁止**使用 `sticky top-24`（會在手機版造成重疊）
 
 ---
 
 ## 📋 待辦事項 (TODO)
 - [x] 新增所有 10 首曲目的視覺概念插圖
+- [x] 修復手機版 Chapter 文字重疊問題
+- [x] 全站圖片轉換為 WebP 並加入 lazy loading
 - [ ] 確認所有圖片在不同裝置上的顯示效果
 - [ ] 考慮加入響應式導航列 (若內容持續增加)
-- [ ] 測試手機版排版效果
 - [ ] 考慮加入音樂試聽播放器 (若有需求)
 
 ---
 
 ## 📅 最後更新
 - **日期**：2026-08-02
-- **版本**：v1.1 全曲目概念圖片補全版
+- **版本**：v1.2 手機版修復 + 效能優化版

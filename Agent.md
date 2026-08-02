@@ -30,6 +30,11 @@ git push
 ---
 
 ## 🕒 最近更新紀錄 (Update Log)
+- **2026-08-02 (v1.2)**：手機版排版修復 + 全站效能優化
+  - 修復 Chapter 1 / 3 側欄在手機版因 `sticky` 定位導致文字重疊問題 (改為 `lg:sticky lg:top-24`)
+  - 所有 16 張圖片轉換為 WebP 格式 (總圖片體積從 ~30 MB 降至 ~5 MB，減少 83%)
+  - 加入 `loading="lazy"` 延遲載入所有非首屏圖片
+  - 完成 Commit `8bc9723` 並成功推送至 GitHub Pages
 - **2026-08-02 (v1.1)**：全專輯 10 首曲目視覺圖片補全
   - 使用 Magnific MCP 生成 Tracks 04、05、06、09、10 頹廢日系暗黑電影感概念圖片
   - 調整 Chapter 2 (3 欄卡片內嵌 16:9 圖片) 與 Chapter 3 (21:9 寬螢幕 Banner) 排版
