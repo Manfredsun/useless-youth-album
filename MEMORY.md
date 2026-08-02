@@ -71,14 +71,14 @@
 | `Pocketwatch.jpg` | Track 01 (倒數) 配圖 |
 | `city_background.jpeg` | Track 02 (2973 公里) 配圖 |
 | `Crossroad.png` | Track 03 (捨棄) 配圖 |
-| `track04_memory.jpg` | Track 04 (笨拙的記憶) 配圖 |
-| `track05_mask.jpg` | Track 05 (面具人) 配圖 |
-| `track06_void.jpg` | Track 06 (會有所不同嗎) 配圖 |
+| `track04_memory.jpg` | Track 04 (笨拙的記憶) 配圖 (Magnific MCP 生成) |
+| `track05_mask.jpg` | Track 05 (面具人) 配圖 (Magnific MCP 生成) |
+| `track06_void.jpg` | Track 06 (會有所不同嗎) 配圖 (Magnific MCP 生成) |
 | `Gemini_Generated_Image_nn0ewtnn0ewtnn0e.png` | Chapter 2 概念大圖 |
 | `notebook.jpg` | Track 07 (渺小) 配圖 |
 | `pexels-strannik-sk-35368202.jpg` | Track 08 (就在我們相遇的一刻) 配圖 |
-| `track09_reprise.jpg` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 |
-| `track10_outro.jpg` | Track 10 (Outro) 配圖 |
+| `track09_reprise.jpg` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 (Magnific MCP 生成) |
+| `track10_outro.jpg` | Track 10 (Outro) 配圖 (Magnific MCP 生成) |
 
 ### 周邊商品圖片
 | 檔名 | 商品 |

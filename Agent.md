@@ -26,3 +26,12 @@ git push
 ```
 
 *注意：`git push` 後約需要 1~2 分鐘，GitHub Pages 即可完成自動部署並顯示最新內容。*
+
+---
+
+## 🕒 最近更新紀錄 (Update Log)
+- **2026-08-02 (v1.1)**：全專輯 10 首曲目視覺圖片補全
+  - 使用 Magnific MCP 生成 Tracks 04、05、06、09、10 頹廢日系暗黑電影感概念圖片
+  - 調整 Chapter 2 (3 欄卡片內嵌 16:9 圖片) 與 Chapter 3 (21:9 寬螢幕 Banner) 排版
+  - 完成 Commit `089d08d` 並成功推送至 GitHub Pages
+
