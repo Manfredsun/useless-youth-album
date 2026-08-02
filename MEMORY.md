@@ -88,8 +88,8 @@
 | `十字路口 歌詞壓克力.webp` | 歌詞壓克力板 | WebP |
 | `壓克力設計.webp` | 壓克力鑰匙圈 | WebP |
 | `布條.webp` | 刺繡布條鑰匙圈 | WebP |
-| `tshirt_sleepless_nights.webp` | 起來復健 概念 T-Shirt (水洗古著質感 + 音響麥克風印花) | WebP |
-| `tshirt_zuishengmengsi.webp` | 醉生夢死 概念 T-Shirt (水洗古著質感 + 骨骼碰杯印花) | WebP |
+| `tshirt_sleepless_nights.webp` | 起來復健 T-Shirt | WebP |
+| `tshirt_zuishengmengsi.webp` | 醉生夢死 T-Shirt | WebP |
 
 ---
 
@@ -134,7 +134,7 @@
 - [x] 重設 Track 02、03、08 封面圖片 (Magnific MCP)
 - [x] 修復手機版 Chapter 文字重疊問題
 - [x] 全站圖片轉換為 WebP 並加入 lazy loading
-- [x] 宣傳周邊新增 2 款概念 T-Shirt (起來復健 / 醉生夢死)
+- [x] 宣傳周邊新增 2 款 T-Shirt (起來復健 / 醉生夢死)
 - [ ] 確認所有圖片在不同裝置上的顯示效果
 - [ ] 考慮加入響應式導航列 (若內容持續增加)
 - [ ] 考慮加入音樂試聽播放器 (若有需求)
@@ -143,4 +143,4 @@
 
 ## 📅 最後更新
 - **日期**：2026-08-03
-- **版本**：v1.4 宣傳周邊新增 2 款概念 T-Shirt 版
+- **版本**：v1.4.1 宣傳周邊 T-Shirt 品名微調與描述優化版
