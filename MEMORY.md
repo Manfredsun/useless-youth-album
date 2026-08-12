@@ -28,7 +28,7 @@
 | 02 | 2973 公里 | Chapter 1 |
 | 03 | 捨棄 | Chapter 1 |
 | 04 | 笨拙的記憶 | Chapter 2 |
-| 05 | 面具人 | Chapter 2 |
+| 05 | 雙面人 | Chapter 2 |
 | 06 | 會有所不同嗎 | Chapter 2 |
 | 07 | 渺小 | Chapter 3 |
 | 08 | 就在我們相遇的一刻 | Chapter 3 |
@@ -53,13 +53,27 @@
 - **圖片載入**：Hero 圖片 eager load；其餘所有圖片 `loading="lazy"`
 
 ### 頁面區塊 (Section)
-1. **Hero** - 主視覺 + 手寫標題 + 核心文案
+1. **Hero** - 主視覺 + 手寫標題 + 核心文案（`h1` 放主標，SEO 用）
 2. **Prologue** - 前言獨白
-3. **Chapter 1** - 成長的代價 (Track 01-03)
-4. **Chapter 2** - 雙面人 (Track 04-06)
-5. **Chapter 3** - 對自己的溫柔 (Track 07-10)
-6. **Merch** - 宣傳周邊展示
-7. **Footer** - 頁尾版權
+3. **Chapter 1** - 成長的代價 (Track 01-03) · 錨點 `#chapter-1`
+4. **Chapter 2** - 雙面人 (Track 04-06) · 錨點 `#chapter-2`
+5. **Chapter 3** - 對自己的溫柔 (Track 07-10) · 錨點 `#chapter-3`
+6. **Discography** - 前作 2023《我們就是沒有用的年輕人》12 首 + 串流連結 · 錨點 `#discography`
+7. **Merch** - 宣傳周邊展示 · 錨點 `#merch`
+8. **Footer** - 頁尾版權 + Threads／IG 連結
+
+錨點是給宣傳貼文直接導到指定段落用的，改動時不要刪掉 `id`。
+
+### SEO／GEO
+- `<head>` 有 meta description、canonical、Open Graph、Twitter Card
+- 兩組 JSON-LD：新專輯《如何長大又沒變壞》10 首、前作《我們就是沒有用的年輕人》12 首（含 Spotify／YouTube Music／KKBOX 的 `sameAs`）
+- `robots.txt` 明確允許 GPTBot、ChatGPT-User、OAI-SearchBot、PerplexityBot、ClaudeBot、anthropic-ai、Google-Extended
+- `sitemap.xml` 指向站台根路徑
+
+### 前作區塊的用途
+新專輯 2027 年才發行，站上沒有任何能立刻聽的東西。前作是唯一「現在就聽得完」的作品，
+也是行銷鋪墊期（發行前那段長跑）的導流終點——宣傳貼文講 2023 的歌，連結指到 `#discography`，
+再由這裡導去串流。同時讓 AI 搜尋引擎回答「我們就是沒有用的年輕人是誰」時有實體可引用。
 
 ---
 
@@ -135,12 +149,16 @@
 - [x] 修復手機版 Chapter 文字重疊問題
 - [x] 全站圖片轉換為 WebP 並加入 lazy loading
 - [x] 宣傳周邊新增 2 款 T-Shirt (起來復健 / 醉生夢死)
+- [x] 補上分享預覽、結構化資料與站內轉換入口
+- [x] 加上章節與周邊區塊的錨點 id
+- [x] 新增前作區塊與 2023 專輯 JSON-LD
 - [ ] 確認所有圖片在不同裝置上的顯示效果
 - [ ] 考慮加入響應式導航列 (若內容持續增加)
 - [ ] 考慮加入音樂試聽播放器 (若有需求)
+- [ ] 前作區塊目前沒有專輯封面圖，之後補一張會更完整
 
 ---
 
 ## 📅 最後更新
-- **日期**：2026-08-03
-- **版本**：v1.4.1 宣傳周邊 T-Shirt 品名微調與描述優化版
+- **日期**：2026-08-12
+- **版本**：新增前作 (Discography) 區塊與 2023 專輯結構化資料
