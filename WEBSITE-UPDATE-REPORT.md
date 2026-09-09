@@ -19,20 +19,20 @@
 
 ## 第一張專輯 Spotify 對照
 
-| 曲序 | 網站顯示歌名 | Spotify 單曲 |
-|---:|---|---|
-| 01 | Prelude | https://open.spotify.com/track/6ez5j1OmObEOVssdnIsDJm |
-| 02 | 如果世上沒有聚光 | https://open.spotify.com/track/22qIi3CxxVovvpZhdUaK9H |
-| 03 | 在十字路口的我如果沒有迷失 | https://open.spotify.com/track/0UwzAmYgXE0Opr4IW6lsEa |
-| 04 | 樹下的我找著如果 | https://open.spotify.com/track/1tEaHGJOMwedTZrtOqARd7 |
-| 05 | 孤獨的旋律 | https://open.spotify.com/track/2cgr0KfeTToNPqnyQ1BBMH |
-| 06 | 不害怕 | https://open.spotify.com/track/2e8vme8DIF7PqlEg9DVZ2L |
-| 07 | 碎了的我 | https://open.spotify.com/track/0YHwl3jCDNwp53Z0WpOBs8 |
-| 08 | 遺憾一定會過去 | https://open.spotify.com/track/4Us9xNwBL3atA63YpxPwpQ |
-| 09 | 是你讓我變得更加溫柔 | https://open.spotify.com/track/2Qd2UlalgPiaFGDnLR6oN6 |
-| 10 | 放肆的自我 | https://open.spotify.com/track/72KM4GUDiviqjYTVFHjUrD |
-| 11 | 直至我們失去的一刻 | https://open.spotify.com/track/7mke5psnPBCnbKacy5aXGx |
-| 12 | 願所有的我們都能找到 | https://open.spotify.com/track/4sqD8FoKUXRH0uyW82OTay |
+| 曲序 | 網站顯示歌名 | Spotify 顯示名稱 | Spotify 演出者 | Spotify 單曲 |
+|---:|---|---|---|---|
+| 01 | Prelude | Prelude | 我們就是沒有用的年輕人、Manfred Sun | https://open.spotify.com/track/6ez5j1OmObEOVssdnIsDJm |
+| 02 | 如果世上沒有聚光 | 如果世上沒有聚光 | 我們就是沒有用的年輕人、王嘉文 | https://open.spotify.com/track/22qIi3CxxVovvpZhdUaK9H |
+| 03 | 在十字路口的我如果沒有迷失 | 在十字路口的我如果沒有迷失 | 我們就是沒有用的年輕人、符績揚 | https://open.spotify.com/track/0UwzAmYgXE0Opr4IW6lsEa |
+| 04 | 樹下的我找著如果 | 樹下的我找著如果 | 我們就是沒有用的年輕人、袁凱瑩 | https://open.spotify.com/track/1tEaHGJOMwedTZrtOqARd7 |
+| 05 | 孤獨的旋律 | 孤獨的旋律 | 我們就是沒有用的年輕人、Z.EN | https://open.spotify.com/track/2cgr0KfeTToNPqnyQ1BBMH |
+| 06 | 不害怕 | 不害怕 | 我們就是沒有用的年輕人、Z.EN | https://open.spotify.com/track/2e8vme8DIF7PqlEg9DVZ2L |
+| 07 | 碎了的我 | 碎了的我 | 我們就是沒有用的年輕人、袁凱瑩 | https://open.spotify.com/track/0YHwl3jCDNwp53Z0WpOBs8 |
+| 08 | 遺憾一定會過去 | 遺憾一定會過去 | 我們就是沒有用的年輕人、Rick Pong | https://open.spotify.com/track/4Us9xNwBL3atA63YpxPwpQ |
+| 09 | 是你讓我變得更加溫柔 | 是你讓我變得更加溫柔 | 我們就是沒有用的年輕人、王嘉文、Rick Pong | https://open.spotify.com/track/2Qd2UlalgPiaFGDnLR6oN6 |
+| 10 | 放肆的自我 | 放肆的自我 | 我們就是沒有用的年輕人、袁凱瑩 | https://open.spotify.com/track/72KM4GUDiviqjYTVFHjUrD |
+| 11 | 直至我們失去的一刻 | 直至我們逝去的一刻 | 我們就是沒有用的年輕人、符績揚 | https://open.spotify.com/track/7mke5psnPBCnbKacy5aXGx |
+| 12 | 願所有的我們都能找到 | 願所有的我們都能找到 | 我們就是沒有用的年輕人 | https://open.spotify.com/track/4sqD8FoKUXRH0uyW82OTay |
 
 Spotify 目前顯示第 11 首為「直至我們逝去的一刻」，網站顯示名稱依歌詞檔案保留為「直至我們失去的一刻」，按鈕開啟上述正確單曲。
 
@@ -53,4 +53,3 @@ Spotify 目前顯示第 11 首為「直至我們逝去的一刻」，網站顯�
 - `http://127.0.0.1:8765/index.html`
 - `http://127.0.0.1:8765/previous-album.html`
 - `http://127.0.0.1:8765/merch.html`
-
