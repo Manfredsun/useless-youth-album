@@ -3,7 +3,7 @@
 ## 本機交付範圍
 
 - 工作副本：`codex/website-three-pages`
-- 本機路徑：`06_進行中宣傳計畫/06_Website/.worktrees/website`
+- 本機路徑：`06_進行中宣傳計畫/06_Website/.worktrees/codex`
 - 頁面：`index.html`（新專輯）、`previous-album.html`（第一張專輯）、`merch.html`（周邊商品）
 - 這次只建立本機提交，沒有合併 `main`、推送 GitHub、建立 PR 或部署。
 
