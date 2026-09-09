@@ -38,6 +38,23 @@
 
 Spotify 目前顯示第 11 首為「直至我們逝去的一刻」，網站顯示名稱依歌詞檔案保留為「直至我們失去的一刻」，按鈕開啟上述正確單曲。
 
+## 第一張專輯聆聽入口調整
+
+- 12 首 Spotify 單曲按鈕已移到各自歌詞 `details` 外；曲目收合時即可操作，與歌詞展開操作分開。
+- 第一張專輯簡介下方新增四個直接專輯入口，桌面雙欄、700px 以下單欄，每列最小高度 56px：
+
+| 平台 | 專輯入口 | 核對狀態 |
+|---|---|---|
+| Apple Music | https://music.apple.com/tw/album/2023-%E6%88%91%E5%80%91%E5%B0%B1%E6%98%AF%E6%B2%92%E6%9C%89%E7%94%A8%E7%9A%84%E5%B9%B4%E8%BC%95%E4%BA%BA/1755191898 | 已核對專輯名稱、演出者與 12 首歌曲；專輯 ID `1755191898` |
+| Spotify | https://open.spotify.com/album/178nne5TIRO1eYOYUyFAsj | 已核對專輯名稱、演出者與曲目頁 |
+| KKBOX | https://www.kkbox.com/tw/en/album/DYSx29ktI9ARXxqSvr | 已核對專輯名稱、演出者與 12 首歌曲 |
+| YouTube Music | https://music.youtube.com/playlist?list=OLAK5uy_lYjsVXbAPtojnCkdPHlLFHva0HYFj5vRw | 已核對專輯名稱、演出者與 12 首歌曲 |
+
+- 已確認曲目收合狀態仍可看見 12 個 Spotify 連結；開關歌詞不會觸發外部連結。
+- 已確認四平台入口在 375、768、1440px 及 200% 等效 CSS 視窗下可讀、可聚焦，連結區塊不被捲動動畫隱藏。
+- 已用鍵盤逐項走訪曲目，焦點順序為歌詞展開操作後接 Spotify 連結；兩首歌詞可同時保持展開。
+- JavaScript 關閉時仍保留原生 `details/summary` 歌詞與四平台／單曲連結；按鈕與平台列最小操作高度分別為 44px 與 56px。
+
 ## 驗收結果
 
 - HTML 結構解析：三頁通過。

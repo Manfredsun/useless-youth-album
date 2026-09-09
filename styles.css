@@ -117,23 +117,32 @@ img { display: block; max-width: 100%; }
 .album-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 2rem; align-items: start; }
 .album-intro h2 { margin: 0; color: var(--text); font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 400; line-height: 1.35; }
 .album-intro p { margin: 0; color: var(--body); }
-.track-list.previous { gap: 1rem; }
-.previous-track { border-top: 1px solid var(--line); }
-.previous-track:last-child { border-bottom: 1px solid var(--line); }
-.previous-summary { min-height: 4.8rem; display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) auto; align-items: center; gap: 1rem; cursor: pointer; list-style: none; }
+.track-list.previous { gap: 0; }
+.previous-track-row { display: grid; grid-template-columns: minmax(0, 1fr) 11rem; gap: 2rem; align-items: start; border-top: 1px solid var(--line); }
+.previous-track-row:last-child { border-bottom: 1px solid var(--line); }
+.previous-track { min-width: 0; border: 0; }
+.previous-summary { min-height: 4.8rem; display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) auto 1.5rem; align-items: center; gap: 1rem; cursor: pointer; list-style: none; }
 .previous-summary::-webkit-details-marker { display: none; }
 .previous-summary::after { content: "+"; color: var(--muted); font-size: 1.4rem; font-weight: 300; }
 .previous-track[open] .previous-summary::after { content: "−"; color: var(--violet); }
 .previous-no { color: var(--violet); font-size: .8rem; letter-spacing: .1em; }
 .previous-title { color: var(--text); font-family: "Noto Serif TC", Georgia, serif; font-size: 1.15rem; }
 .previous-meta { color: var(--muted); font-size: .78rem; }
-.previous-body { display: grid; grid-template-columns: minmax(0, 1fr) 11rem; gap: 2rem; padding: 0 3.5rem 1.8rem; }
+.previous-body { padding: 0 0 1.8rem 3.5rem; }
 .previous-description { margin: 0; color: var(--body); }
 .lyrics { margin-top: 1.3rem; padding: 1rem 1.2rem; border-left: 2px solid var(--violet); background: var(--panel); }
 .lyrics-label { margin: 0 0 .5rem; color: var(--muted); font-size: .75rem; letter-spacing: .08em; }
 .lyrics pre { margin: 0; white-space: pre-wrap; color: var(--body); font: inherit; font-size: .9rem; line-height: 1.85; }
-.spotify-link { align-self: start; justify-self: end; white-space: nowrap; }
+.previous-track-row > .spotify-link { align-self: start; justify-self: end; margin-top: 1rem; white-space: nowrap; }
 .spotify-link::before { content: "♫  "; color: var(--violet); }
+
+.streaming-heading { width: min(100%, 45rem); margin-inline: auto; }
+.streaming-links { width: min(100%, 45rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-inline: auto; }
+.streaming-link { min-height: 3.5rem; display: flex; align-items: center; gap: 1rem; padding: .75rem 1rem; border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: border-color .2s, color .2s, background .2s; }
+.streaming-link::after { content: "→"; margin-left: auto; color: var(--violet); font-size: 1rem; }
+.streaming-link:hover, .streaming-link:focus-visible { border-color: var(--violet); background: var(--panel); }
+.streaming-name { font-size: .95rem; }
+.streaming-action { margin-left: auto; color: var(--muted); font-size: .78rem; letter-spacing: .08em; }
 
 .merch-grid { width: min(100%, 46rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3.5rem 1.5rem; margin-inline: auto; }
 .merch-item figure { margin: 0; }
@@ -180,10 +189,12 @@ img { display: block; max-width: 100%; }
   .photo-grid { grid-template-columns: 1fr; }
   .photo-grid { width: min(100%, 20rem); }
   .photo-button.feature { grid-column: auto; width: 100%; }
-  .previous-summary { grid-template-columns: 2.5rem minmax(0, 1fr) auto; gap: .7rem; }
+  .previous-track-row { grid-template-columns: 1fr; gap: 0; }
+  .previous-summary { grid-template-columns: 2.5rem minmax(0, 1fr) auto 1.25rem; gap: .7rem; }
   .previous-meta { display: none; }
-  .previous-body { grid-template-columns: 1fr; gap: 1rem; padding: 0 0 1.5rem 2.5rem; }
-  .spotify-link { justify-self: start; }
+  .previous-body { padding: 0 0 1.5rem 2.5rem; }
+  .previous-track-row > .spotify-link { justify-self: start; margin: 0 0 1rem 2.5rem; }
+  .streaming-links { width: min(100%, 28rem); grid-template-columns: 1fr; }
   .merch-grid { width: min(100%, 17.5rem); grid-template-columns: 1fr; gap: 2.8rem; }
   .social-panel { display: grid; }
 }
