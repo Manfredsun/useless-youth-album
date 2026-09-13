@@ -33,7 +33,7 @@
 | 07 | 渺小 | Chapter 3 |
 | 08 | 就在我們相遇的一刻 | Chapter 3 |
 | 09 | 直至我們逝去的一刻 (Reprise) | Chapter 3 |
-| 10 | Outro | Chapter 3 |
+| 10 | 就算我們未曾抵達 | Chapter 3 |
 
 ---
 
@@ -94,7 +94,7 @@
 | `notebook.webp` | Track 07 (渺小) 配圖 | WebP |
 | `pexels-strannik-sk-35368202.webp` | Track 08 (就在我們相遇的一刻) 配圖 (Magnific MCP 重設) | WebP |
 | `track09_reprise.webp` | Track 09 (直至我們逝去的一刻 Reprise) 配圖 (Magnific MCP 生成) | WebP |
-| `track10_outro.webp` | Track 10 (Outro) 配圖 (Magnific MCP 生成) | WebP |
+| `track10_outro.webp` | Track 10〈就算我們未曾抵達〉配圖（沿用舊檔名，避免網站路徑失效） | WebP |
 
 ### 周邊商品圖片
 | 檔名 | 商品 | 格式 |
@@ -160,5 +160,7 @@
 ---
 
 ## 📅 最後更新
+- **日期**：2026-09-14
+- **內容**：Track 10 正式命名為〈就算我們未曾抵達〉；核心訊息更新為「即使未能追到夢想，我們仍能把方向握回手裡，接受自己人生未完成項目，也繼續往前。」
 - **日期**：2026-08-12
 - **版本**：新增前作 (Discography) 區塊與 2023 專輯結構化資料
